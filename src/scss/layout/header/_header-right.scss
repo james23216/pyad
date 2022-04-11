@@ -83,6 +83,15 @@
         }
       }
     }
+
+    .primary-nav-link {
+      background: $primary;
+    }
+
+    .white-nav-link {
+      background: white;
+    }
+
     .dropdown-item {
       &:focus,
       &:active {
@@ -183,11 +192,28 @@
     }
   }
   .search-area {
-    height: 50px;
-    
+    position: relative;
+
+    input[type="text"]::placeholder {  
+      padding-left: 5px;
+    }
+
     input {
       background-color: transparent;
-      border-radius: 15px;
+      border-radius: 3rem;
+      padding-left: 37px;
+      width: 250px;
+    }
+
+    .input-group-text {
+      background: transparent !important;
+      position: absolute;
+      left: 0px;
+      line-height: 2.3;
+
+      @include respond("laptop") {
+        line-height: 1.4;
+      }
     }
   }
 }

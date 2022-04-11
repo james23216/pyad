@@ -6,11 +6,13 @@
     height: 7.5rem;
     position: relative;
     padding: 0rem;
-    background-color: $white;
+    background-color: $gray-2;
     z-index: 4;
     // box-shadow: 0 0 1rem $l-border;
     padding-left: 21.563rem;
     transition: all .2s ease;
+    border-bottom: solid 2px $dgray-100;
+
 	@include respond('laptop') {
         padding-left: 18rem;
     }

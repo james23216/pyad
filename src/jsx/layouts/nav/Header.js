@@ -26,12 +26,12 @@ const Header = ({ onNotification, onBox, toggle }) => {
                 {filterName.join(" ")}
               </div>
             </div>
-            <ul className="navbar-nav header-right">
+            <ul className="navbar-nav header-right align-items-center">
               <div className="search-area ml-auto d-inline-flex">
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Search here"
+                  placeholder="Search"
                 />
                 <div className="input-group-append">
                   <button type="button" className="input-group-text">

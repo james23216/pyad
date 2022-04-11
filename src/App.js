@@ -11,7 +11,6 @@ import "./vendor/bootstrap-select/dist/css/bootstrap-select.min.css";
 // import "./css/style.css";
 import "./scss/main.scss";
 
-
 const SignUp = lazy(() => import('./jsx/pages/Registration'));
 const ForgotPassword = lazy(() => import('./jsx/pages/ForgotPassword'));
 const Login = lazy(() => {
