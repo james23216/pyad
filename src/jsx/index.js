@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 /// React router dom
 import { Switch, Route } from 'react-router-dom'
 /// Css
-import './index.css'
-import './chart.css'
-import './step.css'
+import '../css/index.css';
+import '../css/chart.css';
+import '../css/step.css';
 
 /// Layout
-import Nav from './layouts/nav'
-import Footer from './layouts/Footer'
+import Nav from './layouts/nav';
+import Footer from './layouts/Footer';
 
 /// Dashboard
 import Overview from './pages/Overview';
@@ -23,11 +23,11 @@ import ScrollToTop from './layouts/ScrollToTop';
 
 
 const Markup = () => {
-  let path = window.location.pathname
-  path = path.split('/')
-  path = path[path.length - 1]
-  let pagePath = path.split('-').includes('page')
-  const [activeEvent, setActiveEvent] = useState(!path)
+  let path = window.location.pathname;
+  path = path.split('/');
+  path = path[path.length - 1];
+  let pagePath = path.split('-').includes('page');
+  const [activeEvent, setActiveEvent] = useState(!path);
 
   const routes = [
     { url: "", component: Overview },
@@ -37,7 +37,7 @@ const Markup = () => {
     { url: 'messages', component: Messages },
     { url: 'payment-information', component: PaymentInformation },
     { url: 'settings', component: Settings}
-  ]
+  ];
 
   return (
     <>

@@ -17901,6 +17901,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li.mm-active>a {
   background: #0C53FB;
   color: #fff;
+  border-bottom: solid 10px #0144ea;
 }
 
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li.mm-active>a i {

@@ -311,7 +311,7 @@ body {
   line-height: 1.5;
   color: #7e7e7e;
   text-align: left;
-  background-color: #F6FBF8;
+  background-color: #f2f5fa;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -13183,7 +13183,7 @@ a.active {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fff;
+  background-color: #fbfbfd;
   transition: all .2s ease;
   z-index: 5;
 }
@@ -13404,10 +13404,11 @@ a.active {
   height: 7.5rem;
   position: relative;
   padding: 0rem;
-  background-color: #fff;
+  background-color: #f2f5fa;
   z-index: 4;
   padding-left: 21.563rem;
   transition: all .2s ease;
+  border-bottom: solid 2px #e6ecf4;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -13843,6 +13844,14 @@ svg.pulse-svg .third-circle {
   width: 55px;
   text-align: center;
   line-height: 2;
+}
+
+.header-right .notification_dropdown .primary-nav-link {
+  background: #0c53fb;
+}
+
+.header-right .notification_dropdown .white-nav-link {
+  background: white;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -17351,7 +17360,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   top: 7.5rem;
   padding-top: 0;
   z-index: 5;
-  background-color: #fff;
+  background-color: #fbfbfd;
   transition: all .2s ease;
 }
 
@@ -17384,7 +17393,6 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   display: flex;
   flex-direction: column;
   padding-top: 15px;
-  padding-right: 20px;
 }
 
 .deznav .metismenu.fixed {
@@ -17886,7 +17894,6 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li>a {
   font-size: 16px;
   padding: 20px 50px 20px 50px;
-  border-radius: 0 1rem 4rem 0;
   -webkit-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
@@ -17901,6 +17908,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li.mm-active>a {
   background: #0C53FB;
   color: #fff;
+  border-bottom: solid 10px #0144ea;
 }
 
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li.mm-active>a i {
