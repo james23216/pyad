@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 
 import LogoutLink from './Logout';
 
+import profile from "../../../images/profile/12.png";
+
 class MM extends Component {
   componentDidMount() {
     this.$el = this.el;
@@ -107,20 +109,30 @@ class SideBar extends Component {
           </MM>
         </PerfectScrollbar>
         <MM>
+          <li className={`${path === 'help' ? "mm-active" : ""}`}>
+            <Link 
+              className="ai-icon" 
+              to="/dashboard/help"
+              onClick={() => this.props.onClick3()}>
+              <i className="flaticon-381-help"></i>
+              <span className="nav-text">Help</span>
+            </Link>
+          </li>
           <li
             className="dropdown header-profile"
             onClick={() => this.props.onProfile()}
           >
             <Link
-              className="nav-link"
+              className="nav-link has-arrow"
               to="#"
               role="button"
               data-toggle="dropdown"
             >
-              <img src={this.props.profile} width={20} alt="" />
+              <img src={profile} width={20} alt="" />
               <div className="header-info">
                 <span>
-                  Hello,<strong> Roberto</strong>
+                  <strong>Dr. Roberto</strong><br/>
+                  Dentist
                 </span>
               </div>
             </Link>

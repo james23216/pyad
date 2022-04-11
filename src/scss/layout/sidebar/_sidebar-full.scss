@@ -12,7 +12,7 @@
 
           @include transitionMedium;
           @include respond("laptop") {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
         &.mm-active {
@@ -65,7 +65,8 @@
       width: 7.5rem;
       overflow: visible;
       position: absolute;
-      .nav-text {
+      .nav-text,
+      .header-info {
         display: none;
       }
       .slimScrollDiv,
