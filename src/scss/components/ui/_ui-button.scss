@@ -502,14 +502,17 @@ button{
 }
 
 .btn-icon-right {
-	border-left: 1px solid white;
-    display: inline-block;
-    margin: -.8rem 0 -.8rem 1rem;
-    padding: 0.4375rem 0 0.4375rem 1rem;
-    margin: -1rem -0.25rem -1rem 1rem;
-    padding: 1rem 0 1rem 1.25rem;
+	background: #fff;
+	border-radius: 10rem;
+	display: inline-block;
+	margin: -0.5rem 0rem -0.5rem 2rem;
+	padding: 0.5rem 0.8rem;
+	float: right;
 	@include respond('tab-land') {
-		padding: 1rem 0 1rem 0.9rem;
+		padding: 1rem 0rem 1rem 1.5rem;
+	}
+	@include respond("laptop") {
+		padding: 1rem 0rem 1rem 1.5rem;
 	}
 }
 
